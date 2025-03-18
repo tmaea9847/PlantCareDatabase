@@ -1,0 +1,97 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: center;
+    background-color: #f4f7f6;
+}
+
+header {
+    background-color: #2d6a4f;
+    color: white;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.search-section {
+    margin: 20px auto;
+    width: 50%;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    width: 50%;
+    max-height: 200px;
+    overflow-y: auto;
+    text-align: left;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.dropdown-content div {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown-content div:hover {
+    background-color: #f1f1f1;
+}
+
+#plantDetails {
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    display: none;
+    width: 50%;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    background-color: #2d6a4f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #1b4332;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Care Database</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1><center>Plant Care Database</center></h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">My Plants</a></li>
+                <li><a href="#">Care Guide</a></li>
+                <li><a href="#">Reminders</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="search-section">
+        <h2>Search for a Plant</h2>
+        <input type="text" id="plantSearch" placeholder="Type a plant name..." onkeyup="searchPlants()">
+        <div id="dropdown" class="dropdown-content"></div>
+    </section>
+
+    <section id="plantDetails" class="hidden">
+        <h2>Plant Details</h2>
+        <div id="detailsContent"></div>
+        <button onclick="saveToLibrary()">Save to My Library</button>
+    </section>
+
+    <script src="../script.js"></script>
+</body>
+</html>
