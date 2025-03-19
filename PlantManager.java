@@ -17,7 +17,7 @@ public class PlantManager {
 
         if (choice == 1) {
             // Fetch and display all plants using instance
-            List<Plant> plants = plantService.getAllPlants(); // ✅ Corrected here
+            List<Plant> plants = plantService.getAllPlants(); 
             if (plants.isEmpty()) {
                 System.out.println("No plants found in the database.");
             } else {
@@ -25,7 +25,7 @@ public class PlantManager {
                 plants.forEach(System.out::println);
             }
         } else if (choice == 2) {
-            // Search for a plant
+            // searching for a plant
             System.out.print("Enter the plant name to search: ");
             String plantName = scanner.nextLine();
             List<Plant> plants = plantService.searchPlantsByName(plantName);
@@ -37,9 +37,8 @@ public class PlantManager {
                 plants.forEach(System.out::println);
             }
         } else {
-            System.out.println("Invalid option. Exiting...");
-        }
+            System.out.println("Option is unavailable at this time...");
 
         scanner.close();
-    }
-}
+    } // end of main
+} // end of PlantManager
